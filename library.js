@@ -294,6 +294,13 @@ Plugin.checkReply = async function (data, options) {
 	if (isAdmin || isModerator) {
 		return;
 	}
+
+	winston.error(`[plugins/${pluginData.nbbId}] NESRO TEST data.title=${data.title}, data.content=${data.content}`);
+	if (`${data.title} ${data.content}`.toLowerCase().includes('quickbooks')) {
+		winston.error(`[plugins/${pluginData.nbbId}] NESRO BANNED! data.title=${data.title}, data.content=${data.content}`);
+		throw new Error('Post content was discarded because of word blacklist');
+	}
+
 	const akismetData = {
 		referrer: data.req.headers.referer,
 		user_ip: data.req.ip,

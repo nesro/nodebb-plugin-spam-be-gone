@@ -151,6 +151,16 @@
                             </div>
                         </div>
                     </div>
+                    <div role="tabpanel" class="tab-pane fade" id="wordsBlacklist">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="mb-3">
+                                    <label class="form-label" for="wordsBlacklist">Words blacklist</label>
+                                    <input type="text" class="form-control" id="wordsBlacklist" name="wordsBlacklist" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </fieldset>
             </form>
