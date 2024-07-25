@@ -27,6 +27,7 @@
                 <li role="presentation" class="nav-item"><a class="nav-link" href="#recaptcha" aria-controls="recaptcha" role="tab" data-bs-toggle="tab">Google reCAPTCHA</a></li>
                 <li role="presentation" class="nav-item"><a class="nav-link" href="#sfs" aria-controls="sfs" role="tab" data-bs-toggle="tab">StopForumSpam</a></li>
                 <li role="presentation" class="nav-item"><a class="nav-link" href="#hCaptcha" aria-controls="hCaptcha" role="tab" data-bs-toggle="tab">hCaptcha</a></li>
+                <li role="presentation" class="nav-item"><a class="nav-link" href="#blacklist" aria-controls="blacklist" role="tab" data-bs-toggle="tab">blacklist</a></li>
             </ul>
 
             <form role="form" class="{nbbId}-settings">
@@ -151,12 +152,12 @@
                             </div>
                         </div>
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="wordsBlacklist">
+                    <div role="tabpanel" class="tab-pane fade" id="blacklist">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="mb-3">
-                                    <label class="form-label" for="wordsBlacklist">Words blacklist</label>
-                                    <input type="text" class="form-control" id="wordsBlacklist" name="wordsBlacklist" />
+                                    <label class="form-label" for="blacklist">Words blacklist</label>
+                                    <input type="text" class="form-control" id="blacklist" name="blacklist" />
                                 </div>
                             </div>
                         </div>
